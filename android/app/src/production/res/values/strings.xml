@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">rn-flavor PROD</string>
+    <string name="environment">Production</string>
+    <string name="api_base_url">https://api.example.com</string>
+</resources> 
