@@ -17,6 +17,9 @@ importers:
       react-native:
         specifier: 0.80.0
         version: 0.80.0(@babel/core@7.27.4)(@react-native-community/cli@19.0.0(typescript@5.0.4))(@types/react@19.1.8)(react@19.1.0)
+      react-native-config:
+        specifier: ^1.5.5
+        version: 1.5.5
     devDependencies:
       '@babel/core':
         specifier: ^7.25.2
@@ -2917,6 +2920,14 @@ packages:
 
   react-is@19.1.0:
     resolution: {integrity: sha512-Oe56aUPnkHyyDxxkvqtd7KkdQP5uIUfHxd5XTb3wE9d/kRnZLmKbDB0GWk919tdQ+mxxPtG6EAs6RMT6i1qtHg==}
+
+  react-native-config@1.5.5:
+    resolution: {integrity: sha512-dGdLnBU0cd5xL5bF0ROTmHYbsstZnQKOEPfglvZi1vStvAjpld14X25K6mY3KGPTMWAzx6TbjKeq5dR+ILuMMA==}
+    peerDependencies:
+      react-native-windows: '>=0.61'
+    peerDependenciesMeta:
+      react-native-windows:
+        optional: true
 
   react-native@0.80.0:
     resolution: {integrity: sha512-b9K1ygb2MWCBtKAodKmE3UsbUuC29Pt4CrJMR0ocTA8k+8HJQTPleBPDNKL4/p0P01QO9aL/gZUddoxHempLow==}
@@ -7278,6 +7289,8 @@ snapshots:
   react-is@18.3.1: {}
 
   react-is@19.1.0: {}
+
+  react-native-config@1.5.5: {}
 
   react-native@0.80.0(@babel/core@7.27.4)(@react-native-community/cli@19.0.0(typescript@5.0.4))(@types/react@19.1.8)(react@19.1.0):
     dependencies:
