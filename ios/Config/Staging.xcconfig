@@ -1,0 +1,25 @@
+//
+// Staging.xcconfig
+// Staging configuration
+//
+
+#include "Common.xcconfig"
+
+// Bundle Identifier for staging flavor
+PRODUCT_BUNDLE_IDENTIFIER = $(PRODUCT_BUNDLE_IDENTIFIER_BASE).stg
+
+// App Name
+PRODUCT_NAME = rn-flavor-stg
+
+// Info.plist location
+INFOPLIST_FILE = rn-flavor/flavors/stg/Info.plist
+
+// Code Sign Entitlements
+CODE_SIGN_ENTITLEMENTS = rn-flavor/flavors/stg/stg.entitlements
+
+// GoogleService-Info.plist location (for Firebase)
+GOOGLE_SERVICE_INFO_PLIST = rn-flavor/flavors/stg/GoogleService-Info.plist
+
+// Build configuration
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) FLAVOR_STG=1
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) FLAVOR_STG

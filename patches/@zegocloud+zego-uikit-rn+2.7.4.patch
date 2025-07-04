@@ -1,0 +1,49 @@
+diff --git a/node_modules/@zegocloud/zego-uikit-rn/android/.project b/node_modules/@zegocloud/zego-uikit-rn/android/.project
+new file mode 100644
+index 0000000..84ffb5a
+--- /dev/null
++++ b/node_modules/@zegocloud/zego-uikit-rn/android/.project
+@@ -0,0 +1,23 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<projectDescription>
++	<name>zegocloud_zego-uikit-rn</name>
++	<comment>Project zegocloud_zego-uikit-rn created by Buildship.</comment>
++	<projects>
++	</projects>
++	<buildSpec>
++		<buildCommand>
++			<name>org.eclipse.jdt.core.javabuilder</name>
++			<arguments>
++			</arguments>
++		</buildCommand>
++		<buildCommand>
++			<name>org.eclipse.buildship.core.gradleprojectbuilder</name>
++			<arguments>
++			</arguments>
++		</buildCommand>
++	</buildSpec>
++	<natures>
++		<nature>org.eclipse.jdt.core.javanature</nature>
++		<nature>org.eclipse.buildship.core.gradleprojectnature</nature>
++	</natures>
++</projectDescription>
+diff --git a/node_modules/@zegocloud/zego-uikit-rn/android/bin/src/main/java/com/zegouikitrn/ZegoUIKitRNModule.class b/node_modules/@zegocloud/zego-uikit-rn/android/bin/src/main/java/com/zegouikitrn/ZegoUIKitRNModule.class
+new file mode 100644
+index 0000000..36842c2
+Binary files /dev/null and b/node_modules/@zegocloud/zego-uikit-rn/android/bin/src/main/java/com/zegouikitrn/ZegoUIKitRNModule.class differ
+diff --git a/node_modules/@zegocloud/zego-uikit-rn/android/bin/src/main/java/com/zegouikitrn/ZegoUIKitRNPackage.class b/node_modules/@zegocloud/zego-uikit-rn/android/bin/src/main/java/com/zegouikitrn/ZegoUIKitRNPackage.class
+new file mode 100644
+index 0000000..281e0bd
+Binary files /dev/null and b/node_modules/@zegocloud/zego-uikit-rn/android/bin/src/main/java/com/zegouikitrn/ZegoUIKitRNPackage.class differ
+diff --git a/node_modules/@zegocloud/zego-uikit-rn/zego-uikit-rn.podspec b/node_modules/@zegocloud/zego-uikit-rn/zego-uikit-rn.podspec
+index b4d1622..946d092 100644
+--- a/node_modules/@zegocloud/zego-uikit-rn/zego-uikit-rn.podspec
++++ b/node_modules/@zegocloud/zego-uikit-rn/zego-uikit-rn.podspec
+@@ -28,7 +28,6 @@ Pod::Spec.new do |s|
+     }
+ 
+     s.dependency "React-Codegen"
+-    s.dependency "RCT-Folly", folly_version
+     s.dependency "RCTRequired"
+     s.dependency "RCTTypeSafety"
+     s.dependency "ReactCommon/turbomodule/core"

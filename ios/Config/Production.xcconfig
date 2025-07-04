@@ -1,0 +1,28 @@
+//
+// Production.xcconfig
+// Production configuration
+//
+
+#include "Common.xcconfig"
+
+// Bundle Identifier for production flavor
+PRODUCT_BUNDLE_IDENTIFIER = $(PRODUCT_BUNDLE_IDENTIFIER_BASE)
+
+// App Name
+PRODUCT_NAME = rn-flavor
+
+// Info.plist location
+INFOPLIST_FILE = rn-flavor/flavors/prod/Info.plist
+
+// Code Sign Entitlements
+CODE_SIGN_ENTITLEMENTS = rn-flavor/flavors/prod/prod.entitlements
+
+// GoogleService-Info.plist location (for Firebase)
+GOOGLE_SERVICE_INFO_PLIST = rn-flavor/flavors/prod/GoogleService-Info.plist
+
+// Build configuration
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) FLAVOR_PROD=1
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) FLAVOR_PROD
+
+// Swift optimization for production
+SWIFT_OPTIMIZATION_LEVEL = -O
