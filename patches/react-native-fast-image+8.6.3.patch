@@ -1,0 +1,97 @@
+diff --git a/node_modules/react-native-fast-image/RNFastImage.podspec b/node_modules/react-native-fast-image/RNFastImage.podspec
+index db0fada..f16c451 100644
+--- a/node_modules/react-native-fast-image/RNFastImage.podspec
++++ b/node_modules/react-native-fast-image/RNFastImage.podspec
+@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
+   s.source_files  = "ios/**/*.{h,m}"
+ 
+   s.dependency 'React-Core'
+-  s.dependency 'SDWebImage', '~> 5.11.1'
++  s.dependency 'SDWebImage', '~> 5.19.4'
+   s.dependency 'SDWebImageWebPCoder', '~> 0.8.4'
+ end
+diff --git a/node_modules/react-native-fast-image/android/.project b/node_modules/react-native-fast-image/android/.project
+new file mode 100644
+index 0000000..065377c
+--- /dev/null
++++ b/node_modules/react-native-fast-image/android/.project
+@@ -0,0 +1,23 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<projectDescription>
++	<name>react-native-fast-image</name>
++	<comment>Project react-native-fast-image created by Buildship.</comment>
++	<projects>
++	</projects>
++	<buildSpec>
++		<buildCommand>
++			<name>org.eclipse.jdt.core.javabuilder</name>
++			<arguments>
++			</arguments>
++		</buildCommand>
++		<buildCommand>
++			<name>org.eclipse.buildship.core.gradleprojectbuilder</name>
++			<arguments>
++			</arguments>
++		</buildCommand>
++	</buildSpec>
++	<natures>
++		<nature>org.eclipse.jdt.core.javanature</nature>
++		<nature>org.eclipse.buildship.core.gradleprojectnature</nature>
++	</natures>
++</projectDescription>
+diff --git a/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageCacheControl.class b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageCacheControl.class
+new file mode 100644
+index 0000000..a0ca628
+Binary files /dev/null and b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageCacheControl.class differ
+diff --git a/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageGlideModule.class b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageGlideModule.class
+new file mode 100644
+index 0000000..95cfeb3
+Binary files /dev/null and b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageGlideModule.class differ
+diff --git a/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageOkHttpProgressGlideModule$DispatchingProgressListener.class b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageOkHttpProgressGlideModule$DispatchingProgressListener.class
+new file mode 100644
+index 0000000..16cf943
+Binary files /dev/null and b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageOkHttpProgressGlideModule$DispatchingProgressListener.class differ
+diff --git a/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageOkHttpProgressGlideModule$OkHttpProgressResponseBody.class b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageOkHttpProgressGlideModule$OkHttpProgressResponseBody.class
+new file mode 100644
+index 0000000..d9ccf7c
+Binary files /dev/null and b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageOkHttpProgressGlideModule$OkHttpProgressResponseBody.class differ
+diff --git a/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageOkHttpProgressGlideModule$ResponseProgressListener.class b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageOkHttpProgressGlideModule$ResponseProgressListener.class
+new file mode 100644
+index 0000000..486aa83
+Binary files /dev/null and b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageOkHttpProgressGlideModule$ResponseProgressListener.class differ
+diff --git a/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageOkHttpProgressGlideModule.class b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageOkHttpProgressGlideModule.class
+new file mode 100644
+index 0000000..2771b50
+Binary files /dev/null and b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageOkHttpProgressGlideModule.class differ
+diff --git a/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageProgressListener.class b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageProgressListener.class
+new file mode 100644
+index 0000000..f05151e
+Binary files /dev/null and b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageProgressListener.class differ
+diff --git a/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageRequestListener.class b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageRequestListener.class
+new file mode 100644
+index 0000000..472da0f
+Binary files /dev/null and b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageRequestListener.class differ
+diff --git a/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageSource.class b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageSource.class
+new file mode 100644
+index 0000000..b5cbf89
+Binary files /dev/null and b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageSource.class differ
+diff --git a/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageViewConverter.class b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageViewConverter.class
+new file mode 100644
+index 0000000..be0f4a4
+Binary files /dev/null and b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageViewConverter.class differ
+diff --git a/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageViewManager.class b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageViewManager.class
+new file mode 100644
+index 0000000..f89e525
+Binary files /dev/null and b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageViewManager.class differ
+diff --git a/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageViewModule.class b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageViewModule.class
+new file mode 100644
+index 0000000..5c551d2
+Binary files /dev/null and b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageViewModule.class differ
+diff --git a/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageViewPackage.class b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageViewPackage.class
+new file mode 100644
+index 0000000..a1091b8
+Binary files /dev/null and b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageViewPackage.class differ
+diff --git a/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageViewWithUrl.class b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageViewWithUrl.class
+new file mode 100644
+index 0000000..8dbd3a5
+Binary files /dev/null and b/node_modules/react-native-fast-image/android/bin/src/main/java/com/dylanvann/fastimage/FastImageViewWithUrl.class differ

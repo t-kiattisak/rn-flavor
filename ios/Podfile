@@ -1,12 +1,9 @@
-# Resolve react_native_pods.rb with node to allow for hoisting
-require Pod::Executable.execute_command('node', ['-p',
-  'require.resolve(
-    "react-native/scripts/react_native_pods.rb",
-    {paths: [process.argv[1]]},
-  )', __dir__]).strip
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+require_relative '../node_modules/react-native-permissions/scripts/setup'
 
-platform :ios, min_ios_version_supported
-prepare_react_native_project!
+platform :ios, '13.4'
+
+$RNFirebaseAsStaticFramework = true
 
 linkage = ENV['USE_FRAMEWORKS']
 if linkage != nil
@@ -14,22 +11,65 @@ if linkage != nil
   use_frameworks! :linkage => linkage.to_sym
 end
 
-target 'MyApp' do
+setup_permissions([
+  'Bluetooth',
+  'Camera',
+  'LocationAccuracy',
+  'LocationAlways',
+  'LocationWhenInUse',
+  'Microphone',
+  'Notifications'
+])
+
+abstract_target 'common' do
   config = use_native_modules!
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  rn_maps_path = '../node_modules/react-native-maps'
+  pod 'react-native-google-maps', :path => rn_maps_path
+
+  pod 'Firebase', :modular_headers => true
+  pod 'FirebaseCoreInternal', :modular_headers => true
+  pod 'GoogleUtilities', :modular_headers => true
+  pod 'FirebaseCore', :modular_headers => true
+
+  pod 'react-native-config/Extension', :path => '../node_modules/react-native-config'
 
   use_react_native!(
     :path => config[:reactNativePath],
-    # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+  target 'rn-flavor' do
+    # Default target สำหรับ development
+  end
+
   post_install do |installer|
-    # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202
     react_native_post_install(
       installer,
       config[:reactNativePath],
-      :mac_catalyst_enabled => false,
-      # :ccache_enabled => true
+      :mac_catalyst_enabled => false
     )
+
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
+
+        # For VisionCamera specifically
+        if target.name == 'VisionCamera'
+          config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+        end
+      end
+    end
   end
 end
+
+project 'rn-flavor', {
+  'debug-dev' => :debug,
+  'debug-stg' => :debug,
+  'debug-prod' => :debug,
+  'release-dev' => :release,
+  'release-stg' => :release,
+  'release-prod' => :release
+}
