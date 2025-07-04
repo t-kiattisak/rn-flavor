@@ -126,12 +126,24 @@ android {
     productFlavors {
         production {
             applicationIdSuffix ".prod"
+            // กำหนดให้ใช้ general variant สำหรับ react-native-camera
+            missingDimensionStrategy "react-native-camera", "general"
         }
         development {
             applicationIdSuffix ".dev"
+            // กำหนดให้ใช้ general variant สำหรับ react-native-camera
+            missingDimensionStrategy "react-native-camera", "general"
         }
     }
     //react-native-config
+    
+    // Fix for react-native-camera flavor conflict
+    packagingOptions {
+        pickFirst "lib/x86/libc++_shared.so"
+        pickFirst "lib/x86_64/libc++_shared.so"
+        pickFirst "lib/arm64-v8a/libc++_shared.so"
+        pickFirst "lib/armeabi-v7a/libc++_shared.so"
+    }
 }
 
 dependencies {
