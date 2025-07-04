@@ -5,8 +5,8 @@
  * @format
  */
 
-import { NewAppScreen } from '@react-native/new-app-screen';
 import {
+  SafeAreaView,
   StatusBar,
   StyleSheet,
   Text,
@@ -19,24 +19,31 @@ function App() {
   const isDarkMode = useColorScheme() === 'dark';
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
 
       {/* Environment Info */}
       <View style={styles.envContainer}>
-        <Text style={styles.envTitle}>Environment: {Config.ENV}</Text>
-        <Text style={styles.envInfo}>API URL: {Config.API_URL}</Text>
-        <Text style={styles.envInfo}>
-          Version: {Config.ANDROID_VERSION_NAME}
+        <Text style={styles.envTitle}>
+          Environment: {Config.ENV ?? 'development'}
         </Text>
         <Text style={styles.envInfo}>
-          Package: {Config.ANDROID_APPLICATION_ID}
+          API URL: {Config.API_URL ?? 'Not configured'}
         </Text>
-      </View>
+        <Text style={styles.envInfo}>
+          Version: {Config.ANDROID_VERSION_NAME ?? '1.0.0'}
+        </Text>
+        <Text style={styles.envInfo}>
+          Package: {Config.ANDROID_APPLICATION_ID ?? 'com.rnflavor'}
+        </Text>
 
-      {/* @ts-ignore - NewAppScreen has ReactNode return type issue */}
-      <NewAppScreen templateFileName="App.tsx" />
-    </View>
+        {/* React Native Version Info */}
+        <View style={styles.versionContainer}>
+          <Text style={styles.versionTitle}>✅ React Native 0.80.0</Text>
+          <Text style={styles.versionInfo}>🎉 Migration Complete!</Text>
+        </View>
+      </View>
+    </SafeAreaView>
   );
 }
 
@@ -60,6 +67,25 @@ const styles = StyleSheet.create({
     fontSize: 14,
     marginBottom: 5,
     color: '#666',
+  },
+  versionContainer: {
+    marginTop: 15,
+    padding: 15,
+    backgroundColor: '#e8f5e8',
+    borderRadius: 8,
+    borderLeftWidth: 4,
+    borderLeftColor: '#4caf50',
+  },
+  versionTitle: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#2e7d32',
+    marginBottom: 5,
+  },
+  versionInfo: {
+    fontSize: 14,
+    color: '#388e3c',
+    fontWeight: '500',
   },
 });
 
