@@ -5115,6 +5115,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"hermes-eslint@npm:^0.29.1":
+  version: 0.29.1
+  resolution: "hermes-eslint@npm:0.29.1"
+  dependencies:
+    esrecurse: "npm:^4.3.0"
+    hermes-estree: "npm:0.29.1"
+    hermes-parser: "npm:0.29.1"
+  checksum: 10c0/32cb455c8663286df22e6c6015ff85a441708dac4889500f8758614014be1a8e4bb06ca25b8e411aa9177fae02036c134ac4e5ed12de63c8f9d3545ba79679d5
+  languageName: node
+  linkType: hard
+
 "hermes-estree@npm:0.17.0":
   version: 0.17.0
   resolution: "hermes-estree@npm:0.17.0"
@@ -5126,6 +5137,13 @@ __metadata:
   version: 0.28.1
   resolution: "hermes-estree@npm:0.28.1"
   checksum: 10c0/aa00f437c82099b9043e384b529c75de21d0111b792ab7480fe992975b5f9535a8581664789db197824a7825ea66d2fd70eb20cb568c5315804421deaf009500
+  languageName: node
+  linkType: hard
+
+"hermes-estree@npm:0.29.1":
+  version: 0.29.1
+  resolution: "hermes-estree@npm:0.29.1"
+  checksum: 10c0/e6b01f79ba708697d61a74b871d5ebae5f863c6d782657d8e2d2256eb838f1eb86ff9c34773a81d9cc69e54be3a5059c686e0ab54a4afba903b40dde92dd0ccb
   languageName: node
   linkType: hard
 
@@ -5144,6 +5162,15 @@ __metadata:
   dependencies:
     hermes-estree: "npm:0.28.1"
   checksum: 10c0/c6d3c01fb1ea5232f4587b6b038f5c2c6414932e7c48efbe156ab160e2bcaac818c9eb2f828f30967a24b40f543cad503baed0eedf5a7e877852ed271915981f
+  languageName: node
+  linkType: hard
+
+"hermes-parser@npm:0.29.1":
+  version: 0.29.1
+  resolution: "hermes-parser@npm:0.29.1"
+  dependencies:
+    hermes-estree: "npm:0.29.1"
+  checksum: 10c0/7f40d9bdfb5acaa700f333a24c644b17f5f8d0e823b1e7a9fb6dcf253a54d54716ae63c74effa023688ee4f09013c80188c40d601570fee256a44954e04c2926
   languageName: node
   linkType: hard
 
@@ -8041,6 +8068,7 @@ __metadata:
     "@types/react-test-renderer": "npm:19.1.0"
     eslint: "npm:8.56.0"
     eslint-plugin-ft-flow: "npm:^3.0.11"
+    hermes-eslint: "npm:^0.29.1"
     jest: "npm:29.6.3"
     prettier: "npm:2.8.8"
     react: "npm:19.1.0"
