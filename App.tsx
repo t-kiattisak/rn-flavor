@@ -34,6 +34,7 @@ function App() {
         </Text>
       </View>
 
+      {/* @ts-ignore - NewAppScreen has ReactNode return type issue */}
       <NewAppScreen templateFileName="App.tsx" />
     </View>
   );
