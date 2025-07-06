@@ -2973,22 +2973,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-navigation/core@npm:^6.4.17":
-  version: 6.4.17
-  resolution: "@react-navigation/core@npm:6.4.17"
-  dependencies:
-    "@react-navigation/routers": "npm:^6.1.9"
-    escape-string-regexp: "npm:^4.0.0"
-    nanoid: "npm:^3.1.23"
-    query-string: "npm:^7.1.3"
-    react-is: "npm:^16.13.0"
-    use-latest-callback: "npm:^0.2.1"
-  peerDependencies:
-    react: "*"
-  checksum: 10c0/f71fc10dd34d0bd13abd9c947833b9f5ac6aa18af58f74aa72bac45a5d348a4881924fec6534e7694d7084d940d7dac368a1b1fe7d86b260ff5cf475498e9d1b
-  languageName: node
-  linkType: hard
-
 "@react-navigation/core@npm:^7.12.1":
   version: 7.12.1
   resolution: "@react-navigation/core@npm:7.12.1"
@@ -3003,18 +2987,6 @@ __metadata:
   peerDependencies:
     react: ">= 18.2.0"
   checksum: 10c0/ccb695c34b1d8c963cefed721d91ea85108dbd3a011f2f5434b4b73d45671db0883932885bf95c7855e715f3a485f32685bf788b9c2a9c107fd5035ce875dcfd
-  languageName: node
-  linkType: hard
-
-"@react-navigation/elements@npm:^1.3.31":
-  version: 1.3.31
-  resolution: "@react-navigation/elements@npm:1.3.31"
-  peerDependencies:
-    "@react-navigation/native": ^6.0.0
-    react: "*"
-    react-native: "*"
-    react-native-safe-area-context: ">= 3.0.0"
-  checksum: 10c0/4a2e6ee67d1954e8424c437fce83c6268cfa8bea22b1a593b4bfe59ed69deeeba3a1d7285880b3b1b100ffe9b542a81e824cddb53550c4dcf6bd6c29ccb16b97
   languageName: node
   linkType: hard
 
@@ -3071,22 +3043,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-navigation/native-stack@npm:^6.9.1":
-  version: 6.11.0
-  resolution: "@react-navigation/native-stack@npm:6.11.0"
-  dependencies:
-    "@react-navigation/elements": "npm:^1.3.31"
-    warn-once: "npm:^0.1.0"
-  peerDependencies:
-    "@react-navigation/native": ^6.0.0
-    react: "*"
-    react-native: "*"
-    react-native-safe-area-context: ">= 3.0.0"
-    react-native-screens: ">= 3.0.0"
-  checksum: 10c0/fd4072cae0a72f2f3521de2b80c13b61e7d3bca5214e0d92eead162e7a669e417ffdeab9d937f6acf7d2074bb409cc33782a1ce23db6e1f00cb4001b30893938
-  languageName: node
-  linkType: hard
-
 "@react-navigation/native@npm:7.1.14":
   version: 7.1.14
   resolution: "@react-navigation/native@npm:7.1.14"
@@ -3100,30 +3056,6 @@ __metadata:
     react: ">= 18.2.0"
     react-native: "*"
   checksum: 10c0/304c34b2051761a9b98e7c70cd86816c5f142841bff7a7386cb4626111c057a20b96667e0dc4da8df1acf3969a291c7c1903244229a75e61b96c8f279a339047
-  languageName: node
-  linkType: hard
-
-"@react-navigation/native@npm:^6.0.13":
-  version: 6.1.18
-  resolution: "@react-navigation/native@npm:6.1.18"
-  dependencies:
-    "@react-navigation/core": "npm:^6.4.17"
-    escape-string-regexp: "npm:^4.0.0"
-    fast-deep-equal: "npm:^3.1.3"
-    nanoid: "npm:^3.1.23"
-  peerDependencies:
-    react: "*"
-    react-native: "*"
-  checksum: 10c0/1f7138da298067f537a22c5ab2e8e8529e83df8f87c5c61e84afdcd49d6ba1409f44a33bac3bd08bb11bcfba3f1c84574b7aa0a67b28531e4520d485bd4e3b9b
-  languageName: node
-  linkType: hard
-
-"@react-navigation/routers@npm:^6.1.9":
-  version: 6.1.9
-  resolution: "@react-navigation/routers@npm:6.1.9"
-  dependencies:
-    nanoid: "npm:^3.1.23"
-  checksum: 10c0/5b58014cf29bb71c7dc01201e271d55f0ecfe6d38d064179eeff0fc0b5cb739d4d9906eb133f100d25fc674c72c24aa65d5f6bfc3d036d79f7c5d1936391c605
   languageName: node
   linkType: hard
 
@@ -4054,60 +3986,35 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@zegocloud/react-native-callkeep@npm:4.3.9":
-  version: 4.3.9
-  resolution: "@zegocloud/react-native-callkeep@npm:4.3.9"
+"@zegocloud/zego-uikit-prebuilt-call-rn@npm:6.3.15":
+  version: 6.3.15
+  resolution: "@zegocloud/zego-uikit-prebuilt-call-rn@npm:6.3.15"
   peerDependencies:
-    react-native: ">=0.40.0"
-  checksum: 10c0/ed31f2bd76b860b57e682fd43920db0084faec15489a7a0020b5b488a78793d83b5da363090e6fb31a4598bd40d28e9b840f08ae80cb6cf527b2636fa07952c4
-  languageName: node
-  linkType: hard
-
-"@zegocloud/zego-uikit-prebuilt-call-rn@npm:4.5.0":
-  version: 4.5.0
-  resolution: "@zegocloud/zego-uikit-prebuilt-call-rn@npm:4.5.0"
-  dependencies:
-    "@notifee/react-native": "npm:5.3.0"
-    "@react-navigation/native": "npm:^6.0.13"
-    "@react-navigation/native-stack": "npm:^6.9.1"
-    "@zegocloud/react-native-callkeep": "npm:4.3.9"
-    react-native-safe-area-context: "npm:^4.4.1"
-    react-native-screens: "npm:^3.18.2"
-    react-native-sound: "npm:^0.11.2"
-  peerDependencies:
-    "@notifee/react-native": "*"
-    "@react-navigation/native": "*"
-    "@react-navigation/native-stack": "*"
-    "@zegocloud/react-native-callkeep": "*"
-    "@zegocloud/zego-uikit-rn": ">=2.3.1"
+    "@react-navigation/native": ">=6.0.0 <7.0.0"
+    "@react-navigation/native-stack": ">=6.0.0 <7.0.0"
+    "@zegocloud/zego-uikit-rn": ">=2.17.1"
     react: "*"
     react-delegate-component: "*"
     react-native: "*"
     react-native-encrypted-storage: "*"
     react-native-keep-awake: "*"
     react-native-safe-area-context: "*"
-    react-native-screens: "*"
+    react-native-screens: ">=3.0.0"
     react-native-sound: "*"
-  checksum: 10c0/09c0966157aff3093d334dc8ac7438285ca43300f3eaffb872472159059a80e732cc86efd3d0c96ece3d4808ada2eeb12575164fc95f3c4e74b315b2c0766a6a
+  checksum: 10c0/b861409ddc0faff1761e1c304b426039c5cb444d150e1225575b72426956694e914554dc4bf76f12cc007df62196c60bc8456fb259bd6260afcbb669a814f6d1
   languageName: node
   linkType: hard
 
-"@zegocloud/zego-uikit-rn@npm:2.7.4":
-  version: 2.7.4
-  resolution: "@zegocloud/zego-uikit-rn@npm:2.7.4"
-  dependencies:
-    react-delegate-component: "npm:^1.0.0"
-    zego-express-engine-reactnative: "npm:3.2.0"
-    zego-zim-react-native: "npm:2.12.1"
-    zego-zpns-react-native: "npm:2.5.0-alpha"
+"@zegocloud/zego-uikit-rn@npm:2.17.11":
+  version: 2.17.11
+  resolution: "@zegocloud/zego-uikit-rn@npm:2.17.11"
   peerDependencies:
     react: "*"
     react-delegate-component: "*"
     react-native: "*"
-    zego-express-engine-reactnative: ^3.2.0
-    zego-zim-react-native: ^2.12.1
-    zego-zpns-react-native: ^2.5.0-alpha
-  checksum: 10c0/deebe12756dc00cc1130ac5445ead87bcbf5f91782821560ff7224f23875593fb57939a53b79121c994a5d544f639269865e28e35fbecea050c314df19a3f37e
+    zego-express-engine-reactnative: ^3.19.2
+    zego-zim-react-native: ^2.20.0
+  checksum: 10c0/9433b09a6db69374949ca96884c7d26948f24f8ec3483c62ca3a73242d20372afe68d74e04953ed4e37966aa476dcee23d9503746d4e173eddbb80029fb3fcc3
   languageName: node
   linkType: hard
 
@@ -9909,7 +9816,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3.1.23, nanoid@npm:^3.3.1, nanoid@npm:^3.3.11":
+"nanoid@npm:^3.3.1, nanoid@npm:^3.3.11":
   version: 3.3.11
   resolution: "nanoid@npm:3.3.11"
   bin:
@@ -10790,7 +10697,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-delegate-component@npm:1.0.0, react-delegate-component@npm:^1.0.0":
+"react-delegate-component@npm:1.0.0":
   version: 1.0.0
   resolution: "react-delegate-component@npm:1.0.0"
   dependencies:
@@ -10836,7 +10743,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-is@npm:^16.13.0, react-is@npm:^16.13.1, react-is@npm:^16.7.0":
+"react-is@npm:^16.13.1, react-is@npm:^16.7.0":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: 10c0/33977da7a5f1a287936a0c85639fec6ca74f4f15ef1e59a6bc20338fc73dc69555381e211f7a3529b8150a1f71e4225525b41b60b52965bda53ce7d47377ada1
@@ -11505,7 +11412,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-sound@npm:0.11.2, react-native-sound@npm:^0.11.2":
+"react-native-sound@npm:0.11.2":
   version: 0.11.2
   resolution: "react-native-sound@npm:0.11.2"
   peerDependencies:
@@ -12230,8 +12137,8 @@ __metadata:
     "@typescript-eslint/eslint-plugin": "npm:8.35.1"
     "@typescript-eslint/parser": "npm:8.35.1"
     "@wuba/react-native-echarts": "npm:2.0.0"
-    "@zegocloud/zego-uikit-prebuilt-call-rn": "npm:4.5.0"
-    "@zegocloud/zego-uikit-rn": "npm:2.7.4"
+    "@zegocloud/zego-uikit-prebuilt-call-rn": "npm:6.3.15"
+    "@zegocloud/zego-uikit-rn": "npm:2.17.11"
     axios: "npm:1.6.5"
     babel-jest: "npm:29.6.3"
     babel-plugin-module-resolver: "npm:5.0.2"
@@ -12334,8 +12241,8 @@ __metadata:
     socket.io-client: "npm:4.7.2"
     typescript: "npm:5.0.4"
     victory-native: "npm:41.17.4"
-    zego-express-engine-reactnative: "npm:3.17.1"
-    zego-zim-react-native: "npm:2.17.0"
+    zego-express-engine-reactnative: "npm:3.20.2"
+    zego-zim-react-native: "npm:2.20.0"
     zod: "npm:3.24.3"
     zrender: "npm:5.6.0"
     zustand: "npm:5.0.6"
@@ -13681,7 +13588,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"use-latest-callback@npm:^0.2.1, use-latest-callback@npm:^0.2.4":
+"use-latest-callback@npm:^0.2.4":
   version: 0.2.4
   resolution: "use-latest-callback@npm:0.2.4"
   peerDependencies:
@@ -14225,43 +14132,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zego-express-engine-reactnative@npm:3.17.1":
-  version: 3.17.1
-  resolution: "zego-express-engine-reactnative@npm:3.17.1"
+"zego-express-engine-reactnative@npm:3.20.2":
+  version: 3.20.2
+  resolution: "zego-express-engine-reactnative@npm:3.20.2"
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 10c0/28dcc2bd460fb2c291cd744244a77a47611d239bfadbed4a9741a7a0015dc55e18b2b8831412c649ebd1de28bfed7932034f313e94b052649c7c22b6f6155d3f
+  checksum: 10c0/8c468cfabcb0a1fca2d69369d2892acbb4199cce55125e65026c533fa268c23e7a11050b2e2aafd4306e36729a2498b9fd06054334e5229267e3a74372444447
   languageName: node
   linkType: hard
 
-"zego-express-engine-reactnative@npm:3.2.0":
-  version: 3.2.0
-  resolution: "zego-express-engine-reactnative@npm:3.2.0"
+"zego-zim-react-native@npm:2.20.0":
+  version: 2.20.0
+  resolution: "zego-zim-react-native@npm:2.20.0"
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 10c0/1ad1d6ec3e21b07501a5c67689c34a7300ccc49b5f816f88854472bcc5b671c6fbdf543b00a979cc17fa36c3bcaf62feae8a6c73ab5ae05657b0da8bec4ea6ea
-  languageName: node
-  linkType: hard
-
-"zego-zim-react-native@npm:2.17.0":
-  version: 2.17.0
-  resolution: "zego-zim-react-native@npm:2.17.0"
-  peerDependencies:
-    react: "*"
-    react-native: "*"
-  checksum: 10c0/a2a60c2eb2e224110831842e2c5b3b9adfc135f0d85b46ed4e1fc72acd5debe28df2abfe43b60aaf46ea3aee78e9e0d8ae6e3d56a45370514e5b3ca960763357
-  languageName: node
-  linkType: hard
-
-"zego-zpns-react-native@npm:2.5.0-alpha":
-  version: 2.5.0-alpha
-  resolution: "zego-zpns-react-native@npm:2.5.0-alpha"
-  peerDependencies:
-    react: "*"
-    react-native: "*"
-  checksum: 10c0/c93aa06f4d2cc53fc4f8afd712c00c79d2ba29a493edbfd04a3b16522856833a85bcb12164830cf098b5842efcd9b0cc66611c78c74fdc3828aa5daaafdba86b
+  checksum: 10c0/f6d3b1f5a2a1b5a2e40bc61f8378bc61d277d46922f30a395cf976de4a8d44404c8e6d0a84effd51461f263200c11288b9d06aca73331aef0f2148075b344ad5
   languageName: node
   linkType: hard
 

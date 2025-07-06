@@ -1,8 +1,6 @@
 {
   "java.configuration.updateBuildConfiguration": "interactive",
   "editor.formatOnSave": true,
-  "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 1000,
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.codeActionsOnSave": {

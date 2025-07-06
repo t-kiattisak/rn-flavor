@@ -5,10 +5,10 @@
  * @format
  */
 
-import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
+import React from 'react';
 import { StatusBar, useColorScheme } from 'react-native';
-import AppNavigator from './src/navigation/AppNavigator';
+import AppNavigator from './navigation/AppNavigator';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
